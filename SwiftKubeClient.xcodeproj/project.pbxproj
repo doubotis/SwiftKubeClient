@@ -1,0 +1,550 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D3A4163222E9110700F47B4D /* SwiftKubeClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3A4162822E9110600F47B4D /* SwiftKubeClient.framework */; };
+		D3A4163722E9110700F47B4D /* K8SClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A4163622E9110700F47B4D /* K8SClientTests.swift */; };
+		D3A4163922E9110700F47B4D /* SwiftKubeClient.h in Headers */ = {isa = PBXBuildFile; fileRef = D3A4162B22E9110600F47B4D /* SwiftKubeClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3A4164622E9122700F47B4D /* K8SClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A4164522E9122700F47B4D /* K8SClient.swift */; };
+		D3A4164822E912D900F47B4D /* V1Pod.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A4164722E912D900F47B4D /* V1Pod.swift */; };
+		D3A4164A22E9131600F47B4D /* V1ConfigMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A4164922E9131600F47B4D /* V1ConfigMap.swift */; };
+		D3A4164C22E9EDAD00F47B4D /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A4164B22E9EDAD00F47B4D /* Api.swift */; };
+		D3A4164E22E9EDBA00F47B4D /* V1CoreApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A4164D22E9EDBA00F47B4D /* V1CoreApi.swift */; };
+		D3A4165022E9F27A00F47B4D /* K8SConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A4164F22E9F27A00F47B4D /* K8SConfig.swift */; };
+		D3A4165222E9F73000F47B4D /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A4165122E9F73000F47B4D /* Status.swift */; };
+		D3A4165422EA0F7000F47B4D /* K8SConfigTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A4165322EA0F7000F47B4D /* K8SConfigTests.swift */; };
+		D3A4165622EA111000F47B4D /* V1CoreApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A4165522EA111000F47B4D /* V1CoreApiTests.swift */; };
+		D3A4165822EA130100F47B4D /* V1ReplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A4165722EA130100F47B4D /* V1ReplicationController.swift */; };
+		D3A4165A22EA29CE00F47B4D /* V1Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A4165922EA29CE00F47B4D /* V1Service.swift */; };
+		D3A4165C22EA2B3F00F47B4D /* AppsV1Beta1Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A4165B22EA2B3F00F47B4D /* AppsV1Beta1Api.swift */; };
+		D3A4165E22EA2BB700F47B4D /* AppsV1Beta1Deployment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A4165D22EA2BB700F47B4D /* AppsV1Beta1Deployment.swift */; };
+		D3A4166022EA2C6B00F47B4D /* AppsV1Beta1ApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A4165F22EA2C6B00F47B4D /* AppsV1Beta1ApiTests.swift */; };
+		D3A4166222EA2F9F00F47B4D /* AppsV1Beta1StatefulSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A4166122EA2F9F00F47B4D /* AppsV1Beta1StatefulSet.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D3A4163322E9110700F47B4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D3A4161F22E9110600F47B4D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3A4162722E9110600F47B4D;
+			remoteInfo = SwiftKubeClient;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D3A4162822E9110600F47B4D /* SwiftKubeClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftKubeClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3A4162B22E9110600F47B4D /* SwiftKubeClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftKubeClient.h; sourceTree = "<group>"; };
+		D3A4162C22E9110600F47B4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3A4163122E9110700F47B4D /* SwiftKubeClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftKubeClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3A4163622E9110700F47B4D /* K8SClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K8SClientTests.swift; sourceTree = "<group>"; };
+		D3A4163822E9110700F47B4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3A4164522E9122700F47B4D /* K8SClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K8SClient.swift; sourceTree = "<group>"; };
+		D3A4164722E912D900F47B4D /* V1Pod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V1Pod.swift; sourceTree = "<group>"; };
+		D3A4164922E9131600F47B4D /* V1ConfigMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V1ConfigMap.swift; sourceTree = "<group>"; };
+		D3A4164B22E9EDAD00F47B4D /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		D3A4164D22E9EDBA00F47B4D /* V1CoreApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V1CoreApi.swift; sourceTree = "<group>"; };
+		D3A4164F22E9F27A00F47B4D /* K8SConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K8SConfig.swift; sourceTree = "<group>"; };
+		D3A4165122E9F73000F47B4D /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
+		D3A4165322EA0F7000F47B4D /* K8SConfigTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K8SConfigTests.swift; sourceTree = "<group>"; };
+		D3A4165522EA111000F47B4D /* V1CoreApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V1CoreApiTests.swift; sourceTree = "<group>"; };
+		D3A4165722EA130100F47B4D /* V1ReplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V1ReplicationController.swift; sourceTree = "<group>"; };
+		D3A4165922EA29CE00F47B4D /* V1Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V1Service.swift; sourceTree = "<group>"; };
+		D3A4165B22EA2B3F00F47B4D /* AppsV1Beta1Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsV1Beta1Api.swift; sourceTree = "<group>"; };
+		D3A4165D22EA2BB700F47B4D /* AppsV1Beta1Deployment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsV1Beta1Deployment.swift; sourceTree = "<group>"; };
+		D3A4165F22EA2C6B00F47B4D /* AppsV1Beta1ApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsV1Beta1ApiTests.swift; sourceTree = "<group>"; };
+		D3A4166122EA2F9F00F47B4D /* AppsV1Beta1StatefulSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsV1Beta1StatefulSet.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D3A4162522E9110600F47B4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3A4162E22E9110700F47B4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3A4163222E9110700F47B4D /* SwiftKubeClient.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D3A4161E22E9110600F47B4D = {
+			isa = PBXGroup;
+			children = (
+				D3A4162A22E9110600F47B4D /* SwiftKubeClient */,
+				D3A4163522E9110700F47B4D /* SwiftKubeClientTests */,
+				D3A4162922E9110600F47B4D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D3A4162922E9110600F47B4D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D3A4162822E9110600F47B4D /* SwiftKubeClient.framework */,
+				D3A4163122E9110700F47B4D /* SwiftKubeClientTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D3A4162A22E9110600F47B4D /* SwiftKubeClient */ = {
+			isa = PBXGroup;
+			children = (
+				D3A4164222E9115C00F47B4D /* Code */,
+				D3A4162B22E9110600F47B4D /* SwiftKubeClient.h */,
+				D3A4162C22E9110600F47B4D /* Info.plist */,
+			);
+			path = SwiftKubeClient;
+			sourceTree = "<group>";
+		};
+		D3A4163522E9110700F47B4D /* SwiftKubeClientTests */ = {
+			isa = PBXGroup;
+			children = (
+				D3A4165322EA0F7000F47B4D /* K8SConfigTests.swift */,
+				D3A4163622E9110700F47B4D /* K8SClientTests.swift */,
+				D3A4165522EA111000F47B4D /* V1CoreApiTests.swift */,
+				D3A4165F22EA2C6B00F47B4D /* AppsV1Beta1ApiTests.swift */,
+				D3A4163822E9110700F47B4D /* Info.plist */,
+			);
+			path = SwiftKubeClientTests;
+			sourceTree = "<group>";
+		};
+		D3A4164222E9115C00F47B4D /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				D3A4164422E9116F00F47B4D /* Entities */,
+				D3A4164322E9116800F47B4D /* API */,
+			);
+			path = Code;
+			sourceTree = "<group>";
+		};
+		D3A4164322E9116800F47B4D /* API */ = {
+			isa = PBXGroup;
+			children = (
+				D3A4164522E9122700F47B4D /* K8SClient.swift */,
+				D3A4164B22E9EDAD00F47B4D /* Api.swift */,
+				D3A4164D22E9EDBA00F47B4D /* V1CoreApi.swift */,
+				D3A4164F22E9F27A00F47B4D /* K8SConfig.swift */,
+				D3A4165B22EA2B3F00F47B4D /* AppsV1Beta1Api.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		D3A4164422E9116F00F47B4D /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				D3A4164722E912D900F47B4D /* V1Pod.swift */,
+				D3A4164922E9131600F47B4D /* V1ConfigMap.swift */,
+				D3A4165122E9F73000F47B4D /* Status.swift */,
+				D3A4165722EA130100F47B4D /* V1ReplicationController.swift */,
+				D3A4165922EA29CE00F47B4D /* V1Service.swift */,
+				D3A4165D22EA2BB700F47B4D /* AppsV1Beta1Deployment.swift */,
+				D3A4166122EA2F9F00F47B4D /* AppsV1Beta1StatefulSet.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D3A4162322E9110600F47B4D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3A4163922E9110700F47B4D /* SwiftKubeClient.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D3A4162722E9110600F47B4D /* SwiftKubeClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3A4163C22E9110700F47B4D /* Build configuration list for PBXNativeTarget "SwiftKubeClient" */;
+			buildPhases = (
+				D3A4162322E9110600F47B4D /* Headers */,
+				D3A4162422E9110600F47B4D /* Sources */,
+				D3A4162522E9110600F47B4D /* Frameworks */,
+				D3A4162622E9110600F47B4D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftKubeClient;
+			productName = SwiftKubeClient;
+			productReference = D3A4162822E9110600F47B4D /* SwiftKubeClient.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D3A4163022E9110700F47B4D /* SwiftKubeClientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3A4163F22E9110700F47B4D /* Build configuration list for PBXNativeTarget "SwiftKubeClientTests" */;
+			buildPhases = (
+				D3A4162D22E9110700F47B4D /* Sources */,
+				D3A4162E22E9110700F47B4D /* Frameworks */,
+				D3A4162F22E9110700F47B4D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D3A4163422E9110700F47B4D /* PBXTargetDependency */,
+			);
+			name = SwiftKubeClientTests;
+			productName = SwiftKubeClientTests;
+			productReference = D3A4163122E9110700F47B4D /* SwiftKubeClientTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D3A4161F22E9110600F47B4D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Geolives;
+				TargetAttributes = {
+					D3A4162722E9110600F47B4D = {
+						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
+					};
+					D3A4163022E9110700F47B4D = {
+						CreatedOnToolsVersion = 10.2;
+					};
+				};
+			};
+			buildConfigurationList = D3A4162222E9110600F47B4D /* Build configuration list for PBXProject "SwiftKubeClient" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D3A4161E22E9110600F47B4D;
+			productRefGroup = D3A4162922E9110600F47B4D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D3A4162722E9110600F47B4D /* SwiftKubeClient */,
+				D3A4163022E9110700F47B4D /* SwiftKubeClientTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D3A4162622E9110600F47B4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3A4162F22E9110700F47B4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D3A4162422E9110600F47B4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3A4164E22E9EDBA00F47B4D /* V1CoreApi.swift in Sources */,
+				D3A4164A22E9131600F47B4D /* V1ConfigMap.swift in Sources */,
+				D3A4165222E9F73000F47B4D /* Status.swift in Sources */,
+				D3A4165022E9F27A00F47B4D /* K8SConfig.swift in Sources */,
+				D3A4164822E912D900F47B4D /* V1Pod.swift in Sources */,
+				D3A4165822EA130100F47B4D /* V1ReplicationController.swift in Sources */,
+				D3A4165E22EA2BB700F47B4D /* AppsV1Beta1Deployment.swift in Sources */,
+				D3A4166222EA2F9F00F47B4D /* AppsV1Beta1StatefulSet.swift in Sources */,
+				D3A4164C22E9EDAD00F47B4D /* Api.swift in Sources */,
+				D3A4165C22EA2B3F00F47B4D /* AppsV1Beta1Api.swift in Sources */,
+				D3A4164622E9122700F47B4D /* K8SClient.swift in Sources */,
+				D3A4165A22EA29CE00F47B4D /* V1Service.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3A4162D22E9110700F47B4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3A4165622EA111000F47B4D /* V1CoreApiTests.swift in Sources */,
+				D3A4166022EA2C6B00F47B4D /* AppsV1Beta1ApiTests.swift in Sources */,
+				D3A4165422EA0F7000F47B4D /* K8SConfigTests.swift in Sources */,
+				D3A4163722E9110700F47B4D /* K8SClientTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D3A4163422E9110700F47B4D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D3A4162722E9110600F47B4D /* SwiftKubeClient */;
+			targetProxy = D3A4163322E9110700F47B4D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D3A4163A22E9110700F47B4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D3A4163B22E9110700F47B4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D3A4163D22E9110700F47B4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6LJYPP93PK;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SwiftKubeClient/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.geolives.SwiftKubeClient;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D3A4163E22E9110700F47B4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6LJYPP93PK;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SwiftKubeClient/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.geolives.SwiftKubeClient;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D3A4164022E9110700F47B4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6LJYPP93PK;
+				INFOPLIST_FILE = SwiftKubeClientTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.geolives.SwiftKubeClientTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D3A4164122E9110700F47B4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6LJYPP93PK;
+				INFOPLIST_FILE = SwiftKubeClientTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.geolives.SwiftKubeClientTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D3A4162222E9110600F47B4D /* Build configuration list for PBXProject "SwiftKubeClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3A4163A22E9110700F47B4D /* Debug */,
+				D3A4163B22E9110700F47B4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3A4163C22E9110700F47B4D /* Build configuration list for PBXNativeTarget "SwiftKubeClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3A4163D22E9110700F47B4D /* Debug */,
+				D3A4163E22E9110700F47B4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3A4163F22E9110700F47B4D /* Build configuration list for PBXNativeTarget "SwiftKubeClientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3A4164022E9110700F47B4D /* Debug */,
+				D3A4164122E9110700F47B4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D3A4161F22E9110600F47B4D /* Project object */;
+}
