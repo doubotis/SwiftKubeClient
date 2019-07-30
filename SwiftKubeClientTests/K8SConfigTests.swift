@@ -22,10 +22,10 @@ class K8SConfigTests: XCTestCase {
     func testConfigInit() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
-        let config = K8SConfig(host: "127.0.0.1", portNumber: 8090);
+        let config = K8SConfig(host: TestConstants.HOST, portNumber: TestConstants.PORT_NUMBER);
         
-        assert(config.host == "127.0.0.1");
-        assert(config.portNumber == 8090);
+        assert(config.host == TestsConstants.HOST);
+        assert(config.portNumber == TestConstants.PORT_NUMBER);
     }
     
     func testConfigFromFile() {

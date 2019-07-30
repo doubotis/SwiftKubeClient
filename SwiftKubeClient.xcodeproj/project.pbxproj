@@ -25,6 +25,7 @@
 		D3A4165E22EA2BB700F47B4D /* AppsV1Beta1Deployment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A4165D22EA2BB700F47B4D /* AppsV1Beta1Deployment.swift */; };
 		D3A4166022EA2C6B00F47B4D /* AppsV1Beta1ApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A4165F22EA2C6B00F47B4D /* AppsV1Beta1ApiTests.swift */; };
 		D3A4166222EA2F9F00F47B4D /* AppsV1Beta1StatefulSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A4166122EA2F9F00F47B4D /* AppsV1Beta1StatefulSet.swift */; };
+		D3B50A0D22F0259500418B23 /* TestConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B50A0C22F0259500418B23 /* TestConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		D3A4165D22EA2BB700F47B4D /* AppsV1Beta1Deployment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsV1Beta1Deployment.swift; sourceTree = "<group>"; };
 		D3A4165F22EA2C6B00F47B4D /* AppsV1Beta1ApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsV1Beta1ApiTests.swift; sourceTree = "<group>"; };
 		D3A4166122EA2F9F00F47B4D /* AppsV1Beta1StatefulSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsV1Beta1StatefulSet.swift; sourceTree = "<group>"; };
+		D3B50A0C22F0259500418B23 /* TestConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				D3A4165522EA111000F47B4D /* V1CoreApiTests.swift */,
 				D3A4165F22EA2C6B00F47B4D /* AppsV1Beta1ApiTests.swift */,
 				D3A4163822E9110700F47B4D /* Info.plist */,
+				D3B50A0C22F0259500418B23 /* TestConstants.swift */,
 			);
 			path = SwiftKubeClientTests;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3B50A0D22F0259500418B23 /* TestConstants.swift in Sources */,
 				D3A4165622EA111000F47B4D /* V1CoreApiTests.swift in Sources */,
 				D3A4166022EA2C6B00F47B4D /* AppsV1Beta1ApiTests.swift in Sources */,
 				D3A4165422EA0F7000F47B4D /* K8SConfigTests.swift in Sources */,
@@ -482,6 +486,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6LJYPP93PK;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"HOST=127.0.0.1",
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = SwiftKubeClientTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -24,7 +24,7 @@ class K8SClientTests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         
         // Setup shared instance client.
-        let config: K8SConfig = K8SConfig(host: "<KUBE_API_ADDRES>", portNumber: 80);
+        let config: K8SConfig = K8SConfig(host: TestConstants.HOST, portNumber: TestConstants.PORT_NUMBER);
         K8SClient.sharedInstance = K8SClient(config: config);
         
         let v1CoreApi: V1CoreApi = V1CoreApi();
@@ -40,7 +40,7 @@ class K8SClientTests: XCTestCase {
     func testSpecificInstanceClient() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
-        let config: K8SConfig = K8SConfig(host: "<KUBE_API_ADDRES>", portNumber: 80);
+        let config: K8SConfig = K8SConfig(host: TestConstants.HOST, portNumber: TestConstants.PORT_NUMBER);
         let client: K8SClient = K8SClient(config: config);
         
         let v1CoreApi: V1CoreApi = V1CoreApi(client: client);

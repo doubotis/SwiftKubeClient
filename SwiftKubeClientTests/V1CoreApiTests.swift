@@ -13,7 +13,7 @@ class V1CoreApiTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
-        let config: K8SConfig = K8SConfig(host: "<KUBE_API_ADDRES>", portNumber: 80);
+        let config: K8SConfig = K8SConfig(host: TestConstants.HOST, portNumber: TestConstants.PORT_NUMBER);
         K8SClient.sharedInstance = K8SClient(config: config);
     }
 
